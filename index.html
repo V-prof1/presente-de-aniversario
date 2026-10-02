@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08152e">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Uma surpresa para você 💙</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="sky" aria-hidden="true"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <header class="topbar">
+    <span class="brand">I <span>♡</span> você</span>
+    <button id="restart" class="text-button" type="button" hidden>Reiniciar</button>
+  </header>
+
+  <main id="main">
+    <section id="intro" class="screen">
+      <p class="eyebrow">BRASIL · · · ♡ · · · PORTUGAL</p>
+      <div class="envelope decorative" aria-hidden="true"><span>♡</span></div>
+      <p class="eyebrow">UMA ENTREGA ESPECIAL</p>
+      <h1>Um oceano entre nós.<br><em>Um carinho até você.</em></h1>
+      <p>Uma entrega do Brasil acabou de chegar a Portugal… e só uma pessoa pode abrir.</p>
+      <button id="start" class="primary" type="button">Acho que é pra mim <span>→</span></button>
+      <p class="small">Feito por mim, pensando em você.</p>
+    </section>
+
+    <section id="quiz" class="screen" hidden>
+      <p id="question-count" class="eyebrow"></p>
+      <div id="progress" class="progress" aria-hidden="true"></div>
+      <h2 id="question-title" tabindex="-1"></h2>
+      <p class="small">Não tem resposta errada, se a escolha é sua</p>
+      <div id="answers" class="answers"></div>
+      <div id="reply-box" class="reply" hidden>
+        <span class="eyebrow">Do seu amorzinho :P</span>
+        <p id="reply" role="status"></p>
+        <button id="next-question" class="primary" type="button">Continuar →</button>
+      </div>
+    </section>
+
+    <section id="gift" class="screen" hidden>
+      <p class="eyebrow">PARA A MINHA PESSOA ESPECIAL</p>
+      <h2>Agora sim…<br><em>é tudo seu.</em></h2>
+      <p>Tem um pouquinho do meu coração aqui dentro.</p>
+      <button id="open-envelope" class="envelope" type="button" aria-label="Abrir a carta de aniversário"><span>♡</span></button>
+      <p class="small">Toque no coração para abrir.</p>
+    </section>
+
+    <section id="letter" class="screen" hidden>
+      <p class="eyebrow">04 DE OUTUBRO · SEU DIA</p>
+      <h2>Filiz aniversário,<br><em>minha rainha.</em></h2>
+      <article class="letter-paper">
+        <p>Meu amor,</p>
+        <p>Hoje eu queria atravessar essa distância, te dar um abraço bem demorado e ver de pertinho a sua reação a essa surpresa.</p>
+        <p>Desde o dia 25 de agosto, a nossa história ganhou um lugar muito especial na minha vida. Eu amo a sua risada engraçada, seu jeitinho e até esse “filiz” que fica tão bonito quando é você quem fala.</p>
+        <p>Mas também amo o carinho que você teve comigo quando eu estava triste. Obrigado por me ouvir, por me ajudar e por estar lá. Eu lembro disso com muita gratidão e quero que você saiba que também pode contar comigo.</p>
+        <p>No seu aniversário, eu desejo que você encontre motivos pra sorrir, coragem pra seguir seus sonhos e pessoas que cuidem de você com o carinho que você merece. Que esse novo ano da sua vida seja cheio de coisas boas e momentos que você vai adorar lembrar.</p>
+        <p>Esse presente é pequeno perto da vontade que eu tenho de estar aí, mas cada detalhe foi pensado em você. Aproveita muito o seu dia, minha rainha.</p>
+        <p class="signature">Eu te amo.<br>Com carinho, Vitor ♡</p>
+      </article>
+      <button id="to-album" class="primary" type="button">E tem mais um pouquinho… →</button>
+    </section>
+
+    <section id="album" class="screen" hidden>
+      <p class="eyebrow">CINCO FOTOS · MUITO CARINHO</p>
+      <h2>Meu jeito de<br><em>olhar pra você.</em></h2>
+      <figure id="photo-card" class="photo-card">
+        <div class="photo-frame">
+          <img id="photo" alt="" draggable="false">
+          <div id="photo-fallback" class="photo-fallback" hidden><span>♡</span><p>Um lugar guardado para o seu sorriso.</p></div>
+        </div>
+        <figcaption id="caption" aria-live="polite"></figcaption>
+      </figure>
+      <div class="album-nav">
+        <button id="previous-photo" class="circle-button" type="button" aria-label="Foto anterior">←</button>
+        <div id="photo-dots" class="dots" aria-label="Escolher foto"></div>
+        <button id="next-photo" class="circle-button" type="button" aria-label="Próxima foto">→</button>
+      </div>
+      <p class="small">Deslize a foto ou use as setinhas.</p>
+      <button id="to-stars" class="primary" type="button">Guardei mais um carinho →</button>
+    </section>
+
+    <section id="stars" class="screen" hidden>
+      <p class="eyebrow">UM PEDACINHO DO NOSSO CÉU</p>
+      <h2>Quando precisar<br><em>de um carinho…</em></h2>
+      <p>Toque em uma estrela. Cada uma guarda um bilhete meu pra você.</p>
+      <div id="star-notes" class="star-notes"></div>
+      <p class="small">As estrelas que você abrir ficam iluminadas.</p>
+      <button id="to-hug" class="primary" type="button">Receber um abraço do Brasil ♡</button>
+    </section>
+
+    <section id="hug" class="screen" hidden>
+      <p class="eyebrow">DAQUI ATÉ AÍ</p>
+      <div class="hug-hearts" aria-hidden="true"><span>♡</span><span>♡</span></div>
+      <h2>Se esse abraço<br><em>pudesse atravessar a tela…</em></h2>
+      <p>Até eu poder te dar um de verdade.<br>terei que te presentear com esse online.</p>
+      <button id="to-finale" class="primary" type="button">Só mais uma coisa… →</button>
+    </section>
+
+    <section id="finale" class="screen" hidden>
+      <p class="eyebrow">PRA TERMINAR, MAS NÃO PRA DEIXAR DE DIZER</p>
+      <p class="final-intro"> assim como a música do Michael Jackson disse, eu tenho que te dizer…</p>
+      <blockquote class="lyrics"><span>You're beautiful,</span><span>you're wonderful, incredible</span><span>I love you so</span></blockquote>
+      <h2>Filiz aniversário,<br><em>minha rainha♥</em></h2>
+      <p>Eu te amo 💙</p>
+      <p class="small">Do seu amorzinho aqui do Brasil.<br>Juntinhos desde 25.08.2026:)</p>
+      <button id="restart-end" class="text-button" type="button">Reiniciar</button>
+    </section>
+    <noscript>Ative o JavaScript do navegador para abrir a surpresa.</noscript>
+  </main>
+
+  <dialog id="note-dialog" aria-labelledby="note-title">
+    <span class="note-symbol" aria-hidden="true">✦</span>
+    <h2 id="note-title"></h2>
+    <p id="note-text"></p>
+    <button id="close-note" class="primary" type="button">Voltar às estrelas</button>
+  </dialog>
+  <footer>Não importa onde eu esteja, meu coração sempre vai pertencer a você.♡</footer>
+</body>
+</html>
